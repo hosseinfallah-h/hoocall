@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Local RAG Chat</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <h3>Conversations</h3>
+            <ul id="conversations"></ul>
+        </aside>
+        <main class="chat">
+            <div class="chat-head">
+                <h2>RAG Chat (Ollama: gemma3:1b)</h2>
+                <label><input id="useRag" type="checkbox" checked /> Use RAG</label>
+            </div>
+            <div id="messages" class="messages"></div>
+
+            <form id="chatForm">
+                <input type="hidden" id="conversationId" value="{{ conversation_id }}" />
+                <input id="textInput" placeholder="Type your message..." autocomplete="off" />
+                <button type="submit">Send</button>
+                <button type="button" id="micBtn">🎤</button>
+            </form>
+
+            <div class="hint">Voice: hold to record, release to send (server STT)</div>
+        </main>
+    </div>
+    <script src="/static/js/chat.js"></script>
+</body>
+
+</html>

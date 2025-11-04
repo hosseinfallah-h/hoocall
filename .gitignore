@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.env
+.env.*
+*.log
+
+# VSCode / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Data / Artifacts
+data/company_docs/~$*
+apps/web/rag/vector_store/*
+!apps/web/rag/vector_store/.gitkeep
+
+# DB
+apps/web/chat.db

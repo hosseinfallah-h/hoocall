@@ -1,0 +1,12 @@
+flask
+python-dotenv
+sqlalchemy
+pydantic
+faiss-cpu
+sentence-transformers
+pypdf
+python-docx
+numpy
+requests
+vosk         # optional local STT
+soundfile    # for reading wav/ogg on server
